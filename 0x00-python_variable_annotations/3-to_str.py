@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
-"""Basic annotations - to string"""
+''' Description:accepts a float n as argument and returns the string
+    representation of the float.
+    Parameters: n: float
+'''
 
 
 def to_str(n: float) -> str:
-    """returns the string representation of the float"""
+    ''' Return n as a string. '''
     return str(n)
