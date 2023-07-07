@@ -6,4 +6,3 @@ annotations = safely_get_value.__annotations__
 print("Here's what the mappings should look like")
 for k, v in annotations.items():
     print( ("{}: {}".format(k, v)))
-    
