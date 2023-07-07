@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
-"""More involved type annotations"""
+'''
+    Description: Using the parameters and the return values, add type
+    annotations to the function
+    Parameters: T - a TypeVar with value '~T'
+'''
 
-
-from typing import Any, Mapping, Union, TypeVar
+from typing import Mapping, Any, Union, TypeVar
 
 T = TypeVar('T')
 
 
-def safely_get_value(dct: Mapping,
-                     key: Any,
+def safely_get_value(dct: Mapping, key: Any,
                      default: Union[T, None] = None) -> Union[Any, T]:
-    """return the value od of a key"""
+    ''' Outputs dct[key] if it exists, otherwise return `default`. '''
     if key in dct:
         return dct[key]
     else:
