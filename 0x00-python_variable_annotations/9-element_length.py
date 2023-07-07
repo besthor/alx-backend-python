@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-""" Let's duck type an iterable object """
+''' Description: Add annotations to the below function’s parameters and
+                 return values with the appropriate types
+    Parameters: lst: Iterable[Sequence]
+'''
 
-
-from typing import Iterable, List, Sequence, Tuple
+from typing import Iterable, Sequence, List, Tuple
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
-    """ Return a list of tuples containing elements and their lengths """
+    '''Outputs list of tuples, one for each element, of which
+       consists of the element itself and its length.
+    '''
     return [(i, len(i)) for i in lst]
